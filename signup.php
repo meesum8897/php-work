@@ -8,16 +8,16 @@
 <body>
 <form method="POST" action="" enctype="multipart/form-data">
 	<label>Username</label><br>
-	<input type="text" name="txtname"><br>
+	<input type="text" name="txtname" pattern="[A-Za-z0-9_]{6,10}" title="You can use Character,numbers and underscore (_)" required><br>
 
 	<label>Email</label><br>
-	<input type="email" name="txtemail"><br>
+	<input type="email" name="txtemail" pa ttern="[a-z0-9_.]{8,15}@[a-z]{5,8}.[a-z]{2,3}" title="Email Should be like example_123@gmail.com" required><br>
 
 	<label>Password</label><br>
-	<input type="password" name="txtpass"><br>
+	<input type="password" name="txtpass" required><br>
 
 	<label>image</label>
-	<input type="file" name="img"><br>
+	<input type="file" name="img" required accept=".jpg,.png.jpeg"><br>
 
 	<input type="submit" name="btnsub">
 </form>
